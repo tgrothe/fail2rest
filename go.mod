@@ -4,8 +4,8 @@ go 1.19
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/tgrothe/fail2go latest
-	github.com/tgrothe/goWHOIS latest
+	github.com/tgrothe/fail2go v3
+	github.com/tgrothe/goWHOIS v3
 )
 
 require (
