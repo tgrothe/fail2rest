@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/gorilla/mux v1.8.1
-	github.com/tgrothe/fail2go latest
+	github.com/tgrothe/fail2go master
 	github.com/sean-der/goWHOIS v0.0.0-20140709054325-70c302b526cf
 )
 
