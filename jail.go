@@ -21,7 +21,7 @@ func jailGetHandler(res http.ResponseWriter, req *http.Request, fail2goConn *fai
 
 	failRegexes, _ := fail2goConn.JailFailRegex(mux.Vars(req)["jail"])
 	findTime, _ := fail2goConn.JailFindTime(mux.Vars(req)["jail"])
-	useDNS, _ := []string{}, false
+	useDNS, _ := fail2goConn.JailUseDNS(mux.Vars(req)["jail"])
 	maxRetry, _ := fail2goConn.JailMaxRetry(mux.Vars(req)["jail"])
 	actions, _ := fail2goConn.JailActions(mux.Vars(req)["jail"])
 
