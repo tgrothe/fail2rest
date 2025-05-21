@@ -1,4 +1,4 @@
-module github.com/sean-der/fail2rest
+module github.com/tgrothe/fail2rest
 
 go 1.19
 
