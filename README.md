@@ -1,3 +1,37 @@
+# fail2rest fork
+
+## Steps to use this fork of fail2rest:
+
+    git clone https://github.com/tgrothe/fail2go
+    git clone https://github.com/tgrothe/fail2rest
+    cd fail2go && go get
+    cd fail2rest && go get
+    cd fail2rest && go install
+
+## Changes:
+
+I've changed in fail2go backend in jail.go the following lines:
+
+**Before:**
+
+    if _, ok := action.([]interface{})[2].(ogórek.Tuple)[1].([]interface{})[0].(ogórek.Call); ok {
+		IPList = callSliceToStringSlice(action.([]interface{})[2].(ogórek.Tuple)[1].([]interface{}))
+	} else {
+		IPList = interfaceSliceToStringSlice(action.([]interface{})[2].(ogórek.Tuple)[1].([]interface{}))
+	}
+
+**After:**
+
+    IPList = callSliceToStringSlice(action.([]interface{})[2].(ogórek.Tuple)[1].([]interface{}))
+
+**Why?:**
+
+Because that lines have produced an index error if a currently banned ip list of a jail is empty.
+
+This is already reported as an issue at https://github.com/Sean-Der/fail2go/issues/6
+
+---
+
 # fail2rest
 
 ## Overview
