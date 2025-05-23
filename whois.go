@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/tgrothe/fail2go"
-	"github.com/tgrothe/goWHOIS"
+	"github.com/sean-der/goWHOIS"
 )
 
 func whoisHandler(res http.ResponseWriter, req *http.Request, fail2goConn *fail2go.Conn) {
