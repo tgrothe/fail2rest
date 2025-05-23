@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/trgothe/fail2go"
+	"github.com/tgrothe/fail2go"
 	"github.com/tgrothe/goWHOIS"
 )
 
