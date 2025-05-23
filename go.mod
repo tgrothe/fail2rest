@@ -14,4 +14,3 @@ require (
 )
 
 replace github.com/sean-der/fail2go v0.0.1 => github.com/tgrothe/fail2go latest
-replace github.com/sean-der/goWHOIS v0.0.0-20140709054325-70c302b526cf => github.com/tgrothe/goWHOIS latest
